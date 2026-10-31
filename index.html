@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Emmanuel Omowumi | Data Analyst Portfolio</title>
-<meta name="description" content="Data analyst portfolio: Power BI, SQL and Python projects in retail profitability, HR analytics, fintech churn and fraud analytics. Based in Ibadan, Nigeria.">
+<meta name="description" content="Data analyst portfolio: Power BI, SQL and Python projects in retail profitability, HR analytics, healthcare readmissions, fintech churn and fraud analytics. Based in Ibadan, Nigeria.">
 <meta name="author" content="Emmanuel Omowumi">
 <meta property="og:title" content="Emmanuel Omowumi | Data Analyst Portfolio">
 <meta property="og:description" content="Power BI, SQL and Python projects in retail, HR, fintech and risk analytics.">
@@ -59,7 +59,7 @@
   <div class="wrap">
     <p class="eyebrow">Selected work</p>
     <h2>Projects</h2>
-    <p class="lead">Four end-to-end case studies. Each starts with a business question, shows the method, and ends with a result and a recommendation. Data in these projects is synthetic and labelled as such.</p>
+    <p class="lead">Five end-to-end case studies. Each starts with a business question, shows the method, and ends with a result and a recommendation. The readmissions project uses real public data; the others use synthetic data and are labelled as such.</p>
 
     <!-- Project 1 -->
     <article class="project" id="atlas">
@@ -121,6 +121,38 @@
         <span><strong>Tools:</strong> Power BI · DAX · Power Query · Python</span>
         <span><strong>Data:</strong> synthetic</span>
         <a href="https://github.com/Nuelwumi2024/powerbi-hr-attrition-dashboard" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+    </article>
+
+    <!-- Healthcare project -->
+    <article class="project" id="readmissions">
+      <header>
+        <span class="pill">Python</span><span class="pill">Healthcare</span><span class="pill">Real CMS data</span>
+        <h3>Which hospitals and conditions drive Medicare readmissions?</h3>
+        <p class="lead">Analysis of 3,055 US hospitals using public Medicare (CMS) data</p>
+      </header>
+      <div class="shots">
+        <a href="assets/img/health-02_excess_by_condition.png" target="_blank" rel="noopener"><img src="assets/img/health-02_excess_by_condition.png" alt="Bar chart showing heart failure and pneumonia produce most of the excess hospital readmissions" loading="lazy"></a>
+        <a href="assets/img/health-04_state_condition_heatmap.png" target="_blank" rel="noopener"><img src="assets/img/health-04_state_condition_heatmap.png" alt="Heatmap of the average excess readmission ratio by US state and condition" loading="lazy"></a>
+        <a href="assets/img/health-07_persistence_vs_chance.png" target="_blank" rel="noopener"><img src="assets/img/health-07_persistence_vs_chance.png" alt="Chart showing more hospitals are consistently worse or consistently better than chance would predict" loading="lazy"></a>
+        <a href="assets/img/health-05_worst_hospitals.png" target="_blank" rel="noopener"><img src="assets/img/health-05_worst_hospitals.png" alt="Stacked bar chart of the 15 hospitals with the most excess readmissions, split by condition" loading="lazy"></a>
+      </div>
+      <div class="cols">
+        <div><h4>Challenge</h4><p>Medicare penalises hospitals whose patients return within 30 days more often than expected. Where do these readmissions happen, which conditions drive them, and which hospitals are worse than the benchmark?</p></div>
+        <div><h4>Approach</h4><ul>
+          <li>Pulled the CMS Hospital Readmissions Reduction Program data through its public API (18,330 rows)</li>
+          <li>Cleaned suppressed values, estimated excess readmissions and compared states, conditions and hospitals</li>
+          <li>Tested whether weak hospitals are consistently weak or just unlucky, using a shuffle test against chance</li></ul></div>
+        <div><h4>Results</h4><ul>
+          <li><strong>Heart failure and pneumonia produce 77%</strong> of excess readmissions, because of volume, not worse rates</li>
+          <li><strong>561 hospitals (23.5%)</strong> are worse on at least 75% of their conditions and generate <strong>49%</strong> of the excess</li>
+          <li>Massachusetts, New Jersey, Florida and Illinois sit highest; Utah and Oregon lowest</li>
+          <li>Under-performers are weak across the board, which points to hospital-wide discharge processes</li></ul></div>
+      </div>
+      <div class="meta">
+        <span><strong>Tools:</strong> Python · pandas · Matplotlib · Power BI-ready tables and DAX</span>
+        <span><strong>Data:</strong> real, public (CMS)</span>
+        <a href="https://github.com/Nuelwumi2024/hospital-readmissions-analysis" target="_blank" rel="noopener">View on GitHub →</a>
       </div>
     </article>
 
