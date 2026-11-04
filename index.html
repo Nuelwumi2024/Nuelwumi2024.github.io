@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Emmanuel Omowumi | Data Analyst Portfolio</title>
-<meta name="description" content="Data analyst portfolio: Power BI, SQL and Python projects in retail profitability, HR analytics, healthcare readmissions, fintech churn and fraud analytics. Based in Ibadan, Nigeria.">
+<meta name="description" content="Data analyst portfolio: Power BI, SQL and Python projects in retail profitability, HR analytics, healthcare readmissions, e-commerce, fintech churn and fraud analytics. Based in Ibadan, Nigeria.">
 <meta name="author" content="Emmanuel Omowumi">
 <meta property="og:title" content="Emmanuel Omowumi | Data Analyst Portfolio">
 <meta property="og:description" content="Power BI, SQL and Python projects in retail, HR, fintech and risk analytics.">
@@ -60,7 +60,7 @@
   <div class="wrap">
     <p class="eyebrow">Selected work</p>
     <h2>Projects</h2>
-    <p class="lead">Five end-to-end case studies. Each starts with a business question, shows the method, and ends with a result and a recommendation. The readmissions project uses real public data; the others use synthetic data and are labelled as such.</p>
+    <p class="lead">Six end-to-end case studies. Each starts with a business question, shows the method, and ends with a result and a recommendation. The readmissions project uses real public data; the others use synthetic data and are labelled as such.</p>
 
     <!-- Project 1 -->
     <article class="project" id="atlas">
@@ -91,6 +91,38 @@
         <span><strong>Tools:</strong> Power BI · DAX · Power Query · Star schema · Python</span>
         <span><strong>Data:</strong> synthetic</span>
         <a href="https://github.com/Nuelwumi2024/powerbi-global-superstore-analysis" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+    </article>
+
+    <!-- E-commerce project -->
+    <article class="project" id="blackfriday">
+      <header>
+        <span class="pill">Power BI</span><span class="pill">Python</span><span class="pill">E-commerce analytics</span>
+        <h3>The Black Friday Playbook: customers, marketing and delivery</h3>
+        <p class="lead">Case study for a fictional Nigerian online retailer, four weeks before Black Friday</p>
+      </header>
+      <div class="shots">
+        <a href="assets/img/bf-02_channel_ltv_to_cac.png" target="_blank" rel="noopener"><img src="assets/img/bf-02_channel_ltv_to_cac.png" alt="Bar chart of 12-month customer contribution divided by acquisition cost for six marketing channels" loading="lazy"></a>
+        <a href="assets/img/bf-06_black_friday_strain.png" target="_blank" rel="noopener"><img src="assets/img/bf-06_black_friday_strain.png" alt="Charts comparing orders per day, failed orders and delivery days in the Black Friday window, December and the rest of the year" loading="lazy"></a>
+        <a href="assets/img/bf-04_rfm_segments.png" target="_blank" rel="noopener"><img src="assets/img/bf-04_rfm_segments.png" alt="Bar chart comparing each customer segment's share of customers and share of revenue" loading="lazy"></a>
+        <a href="assets/img/bf-03_repeat_by_channel.png" target="_blank" rel="noopener"><img src="assets/img/bf-03_repeat_by_channel.png" alt="Charts showing repeat purchase rate by channel and TikTok's rising share of new customers" loading="lazy"></a>
+      </div>
+      <div class="cols">
+        <div><h4>Challenge</h4><p>Black Friday was the biggest week of the year, but finance said the business had sold a lot and kept little. Is growth real, who are the best customers, which marketing pays back, and did Black Friday make money?</p></div>
+        <div><h4>Approach</h4><ul>
+          <li>Simulated 31,247 orders and 14,811 customers (Jan 2024 to Oct 2026) with realistic Nigerian conditions</li>
+          <li>Python for RFM segmentation, CAC and 12-month customer value, payment and delivery analysis, discount economics</li>
+          <li>Power BI model, DAX measures (including a discount-cap what-if) and a four-page report plan</li></ul></div>
+        <div><h4>Results</h4><ul>
+          <li>Naira revenue grew <strong>92%</strong>, but only <strong>50%</strong> after removing inflation</li>
+          <li>WhatsApp referral pays back <strong>15.9x</strong>; influencers just <strong>1.5x</strong>; only 17% of TikTok customers reorder</li>
+          <li><strong>9.3% of orders</strong> (₦144M) are lost to failed payments and refusals at the door</li>
+          <li>Black Friday brings 3.8x the orders at a <strong>-6% margin</strong>; a 15% discount cap turns last year's window from a ₦2.1M loss into a ₦2.5M profit</li></ul></div>
+      </div>
+      <div class="meta">
+        <span><strong>Tools:</strong> Python · pandas · Matplotlib · Power BI · DAX</span>
+        <span><strong>Data:</strong> synthetic</span>
+        <a href="https://github.com/Nuelwumi2024/powerbi-ecommerce-black-friday-playbook" target="_blank" rel="noopener">View on GitHub →</a>
       </div>
     </article>
 
